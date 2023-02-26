@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/utman"
+        android:layout_width="278dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="572dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/utmann" />
+
+    <ProgressBar
+        android:id="@+id/power"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="251dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/colorRed"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utman"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TextView
+        android:id="@+id/TextLoading"
+        android:layout_width="389dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/power"
+        android:layout_marginBottom="40dp"
+        android:drawableLeft="@drawable/btn_bg"
+        android:drawableRight="@drawable/btn_bg"
+        android:drawablePadding="100dp"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="LOADING "
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="193dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power"
+        app:layout_constraintVertical_bias="0.668"
+        app:srcCompat="@drawable/splash_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
